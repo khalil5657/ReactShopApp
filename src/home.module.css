@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+.nav{
+    display: grid;
+    grid-template-columns: 80px 80px 1fr;
+    background-color: rgb(185, 184, 184);
+    box-shadow: 1px 2px 20px rgb(182, 181, 181);
+  }
+  .nav > div{
+    padding: 8px 18px;
+  }
+.nav > div:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.home{
+    border: 2px solid black;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    max-width: 560px;
+    line-height: 30px;
+}
+.featured{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 400px 400px 400px 400px;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+
+.content{
+    margin-top: 90px;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    border: 2px solid black;
+}
+.item img{
+    height: 300px;
+    width: 100%;
+}
+.cadre{
+    width: 35%;
+    margin-left: 32%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr ;
+    margin-bottom: 100px;
+}
+.cadre img{
+    width: 100%;
+    height: 300px;
+}
+.cadre button{
+    height: 30px;
+    background-color: rgb(11, 210, 11);
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: none;
+    margin-top: 20px;
+}
+.cadre button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.test{
+    display: flex;
+    justify-content: end;
+    
+}
+.test:hover{
+    cursor: pointer;
+    background-color: rgb(185, 184, 184);
+}
+.test svg{
+    width: 20px;
+    height: 20px;
+}
+.number{
+    background-color: red;
+    color: white;
+    height: 16px;
+    width: 16px;
+    font-size: 13px;
+    transform: translateY(-5px);
+    border-radius: 8px;
+}
+.price{
+    all: unset;
+}
+.bought{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 180px;
+    max-height: 280px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(133, 133, 133);
+}
+.bought img{
+    width: 100%;
+    min-height: 180px;
+    max-height: 280px;
+    border-radius: 10px;
+}
+.right-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

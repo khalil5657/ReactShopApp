@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+.nav{
+    display: flex;
+    background-color: rgb(185, 184, 184);
+    box-shadow: 1px 2px 20px rgb(182, 181, 181);
+}
+.nav > div{
+    padding: 8px 18px;
+  }
+  .nav > div:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.home{
+    border: 2px solid black;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+/* .store{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: ;
+} */
