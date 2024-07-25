@@ -12,8 +12,8 @@ let cart = 0;
 let rawdata = ''
 let data = ''
 async function fetchData() {
-  const rawdata = await fetch("https://fakestoreapi.com/products?limit=12");
-  const data = await rawdata.json();
+  rawdata = await fetch("https://fakestoreapi.com/products?limit=12");
+  data = await rawdata.json();
 }
 fetchData()
 // const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
