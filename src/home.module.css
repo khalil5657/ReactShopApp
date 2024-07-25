@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
   }
+
 .nav{
     display: grid;
     grid-template-columns: 80px 80px 1fr;
@@ -93,7 +94,7 @@ body{
     color: white;
     height: 16px;
     width: 16px;
-    font-size: 13px;
+    font-size: 0.8em;
     transform: translateY(-5px);
     border-radius: 8px;
 }
@@ -111,16 +112,70 @@ body{
     margin-top: 50px;
     border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(133, 133, 133);
+    box-shadow: 2px 2px 5px rgb(133, 133, 133);
 }
 .bought img{
     width: 100%;
+    height: 100%;
     min-height: 180px;
     max-height: 280px;
     border-radius: 10px;
 }
-.right-section{
+.rightsection{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    /* row-gap: 8px; */
+}
+.kk{
+    font-size: 2em;
+}
+.quantity{
+    font-weight: 300;
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+.quantity span{
+    font-size: 1.2em;
+}
+.minus{
+    background-color: red;
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: calc(1.8em/2);
+    /* padding: 5px; */
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.plus{
+    background-color: green;
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: calc(1.8em/2);
+    /* padding: 5px; */
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.minus:hover{
+    opacity: 0.7;
+}
+.plus:hover{
+    opacity: 0.7;
+}
+.ok{
+    width: 15%;
+    margin-left: calc(85% /2);
+    height: 20px;
+    margin-top: 20px;
+}
+.tt{
+    display: flex;
+    align-items: start;
+    justify-content: start;
 }

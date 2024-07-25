@@ -48,7 +48,7 @@ function Store1(props){
                      56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50
                      .405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29
                      .319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg></Link>
-                     <div className={otherstyles.number}>{fullNum}</div></div>
+                     <div className={otherstyles.number}>{fullNum > 99?"99+":fullNum}</div></div>
             </div>
     <div className={otherstyles.featured}>
         {result}

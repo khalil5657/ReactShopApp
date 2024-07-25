@@ -13,3 +13,7 @@ margin: 0;}
 .link{
   all: unset;
 }
+body{
+  font-family: "Rubik", sans-serif;
+  font-weight:300;
+}
