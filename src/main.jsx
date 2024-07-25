@@ -9,8 +9,14 @@ import Store1 from './store1.jsx';
 import ShowItem from './item.jsx';
 import ShowThem from './boughtItems.jsx';
 let cart = 0;
-const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
-const data = await rawdata.json()
+let rawdata = ''
+let data = ''
+async function fetchData() {
+  const rawdata = await fetch("https://fakestoreapi.com/products?limit=12");
+  const data = await rawdata.json();
+}
+// const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
+// const data = await rawdata.json()
 // const raw = await fetch("https://api.giphy.com/v1/gifs/search?api_key=AtNKqVAxubIRW9Dwf2leh6d45eXY2xt1&limit=12&offset=12&q=soccer")
 // const final = await raw.json()
 function add(num){
