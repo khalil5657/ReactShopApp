@@ -19,8 +19,19 @@ let data = '';
 // }
 // const data = getIt();
 
-fetch("https://fakestoreapi.com/products?limit=12").then((rawdata) =>{
-data = rawdata.json()})
+// fetch("https://fakestoreapi.com/products?limit=12").then((rawdata) =>{
+// return rawdata.json()}).then((newdata)=>{
+//   data = newdata
+// })
+
+async function getIt(){
+  const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
+  let data = await rawdata.json()
+  return data
+}
+
+
+const data = await getIt();
 
 function add(num){
   cart = cart + num
