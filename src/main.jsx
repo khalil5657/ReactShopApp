@@ -9,12 +9,18 @@ import Store1 from './store1.jsx';
 import ShowItem from './item.jsx';
 import ShowThem from './boughtItems.jsx';
 let cart = 0;
-async function getIt(){
-const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
-const data = await rawdata.json()
-return data
-}
-const data = getIt();
+let data = '';
+
+
+// async function getIt(){
+// const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
+// const data = await rawdata.json()
+// return data
+// }
+// const data = getIt();
+
+fetch("https://fakestoreapi.com/products?limit=12").then((rawdata) =>{
+data = rawdata.json()})
 
 function add(num){
   cart = cart + num
