@@ -23,7 +23,7 @@ let data = '';
 // return rawdata.json()}).then((newdata)=>{
 //   data = newdata
 // })
-
+async function all(){
 async function getIt(){
   const rawdata = await fetch("https://fakestoreapi.com/products?limit=12")
   let data = await rawdata.json()
@@ -61,3 +61,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+}
+all()
