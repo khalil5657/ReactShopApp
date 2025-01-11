@@ -16,7 +16,7 @@ body{
     cursor: pointer;
     background-color: white;
 }
-.home{
+.home, .testa{
     border: 2px solid black;
 }
 
@@ -33,11 +33,75 @@ body{
 .featured{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px ;
     column-gap: 40px;
     margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* transform:  translateX(-50%); */
 }
-
+@media screen and (max-width:1330px){
+    .featured{
+        grid-template-columns: 40% 40%;
+        margin-left: 10%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    
+}
+@media screen and (max-width:1000px) {
+    .nav{
+        height: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100% 100% 100%;
+        font-size: 28px;
+    }
+    .nav > div, .nav > div a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav >div a{
+        height: 100%;
+        width: 100%;
+    }
+    .nav .test div{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        transform: translateY(-15px) translateX(15px);
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title p{
+        font-size: 25px;
+    }
+    .title button{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .content > h3{
+        font-size: 28px;
+    }
+    .rightsection h1{
+        font-size: 27px;
+    }
+    .rightsection h3, .rightsection div, .rightsection div button{
+        font-size: 1.3rem;
+    }
+    .nav svg{
+        transform: scale(2);
+    }
+    
+    
+}
+@media screen and (max-width:530px) {
+    .featured{
+        grid-template-columns: 80%;
+    }
+}
 .content{
     margin-top: 90px;
 }
@@ -56,7 +120,7 @@ body{
     margin-left: 32%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr ;
+    /* grid-template-rows: 1fr 3fr 1fr ; */
     margin-bottom: 100px;
 }
 .cadre img{
@@ -121,12 +185,20 @@ body{
     max-height: 280px;
     border-radius: 10px;
 }
+
 .rightsection{
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 25% 25% 25% 25%;
+    /* row-gap: 10px; */
     /* row-gap: 8px; */
 }
+.rightsection div, .rightsection h3, .rightsection, h1{
+    margin: 0;
+    padding: 0;
+    
+} 
 .kk{
     font-size: 2em;
 }
@@ -161,6 +233,9 @@ body{
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
 }
 .minus:hover{
     opacity: 0.7;
@@ -176,6 +251,56 @@ body{
 }
 .tt{
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-items:center;
+}
+
+@media screen and (max-width:550px) {
+    .cadre{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cadre h3{
+        font-size: 40px;
+    } 
+    .cadre p{
+        font-size: 25px;
+    } 
+    .cadre input {
+        height: 30px;
+        font-size: 30px;
+    }
+    .cadre button{
+        height: 50px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .bought{
+        max-height: 60vh;
+        min-height: 60vh;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .bought img{
+        max-height: 60vh;
+        min-height: 60vh;
+    }
+    .bought .tt{
+        /* display: flex;
+        justify-content: start; */
+    }
+    .bought .tt button{
+        width: 100px;
+        padding: 5px;
+    }
+    .rightsection h3, .rightsection .tt button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .plus{
+        height: 1em;
+        width: 1em;
+        font-size: 0.8em;
+    } */
 }

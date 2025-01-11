@@ -25,7 +25,7 @@ function HomePage(props){
         <>
             <div className={styles.nav}>
                 <div className={styles.home} state={{number: fullNum, items:allItems}}>Home</div>
-                <div><Link className="link" to="store" state={{number: fullNum, items:allItems}}>Store</Link></div>
+                <div className="store"><Link className="link" to="store" state={{number: fullNum, items:allItems}}>Store</Link></div>
                 <div className={styles.test}><Link to="/cart" state={{number: fullNum, items:allItems}}><svg stroke="currentColor" fill="currentColor"
                  stroke-width="0" viewBox="0 0 576 512" class="h-5 w-5" height="1em"
                   width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M528.12 301.319l47.273-208C578.806
@@ -43,10 +43,10 @@ function HomePage(props){
                 <p className={styles.paragraph}>Discover an unparalleled shopping experience with our extensive selection of products,
                      unbeatable prices, and exceptional customer service.
                      Shop now and transform your shopping journey with us.</p>
-                <button>Shop Now</button>
+                <Link style={{textDecoration:"none", color:"black", border:"1px solid black", padding:"20px"}} to="/store">Shop Now</Link>
             </div>
             <div className={styles.content}>
-                <div>Featured Items</div>
+                <h3>Featured Items</h3>
                 <div className={styles.featured}>
                     <Link to={"/store/" + 0} state={{number: fullNum, items:allItems}}><div className={styles.item}>
                             <h5>{props.data[0].title}</h5>
